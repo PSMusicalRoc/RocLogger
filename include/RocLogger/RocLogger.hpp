@@ -12,6 +12,10 @@
 #define LogError(message) Logger::_LogError(message, __FILE__, __LINE__) 
 #define LogFatal(message) Logger::_LogFatal(message, __FILE__, __LINE__) 
 
+#define LogAssert(expr) if (!(expr)) {\
+    Logger::_LogFatal("Assertion Failed\n\t" #expr, __FILE__, __LINE__);\
+    throw "ROC_ASSERTION_FAILED";}\
+
 #include <string>
 #include <iostream>
 #include <fstream>
