@@ -5,4 +5,7 @@ A very basic logger for C++.
 
 ## Installation
 
-Installation is very simple: simply merge the include folder with your current include folder, and you're done!
+Installation is very simple:
+1) Clone the repo into a folder in your project.
+2) Include the premake script in your main premake script.
+3) Profit.
