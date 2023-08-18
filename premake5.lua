@@ -1,4 +1,4 @@
-
+filter {}
 
 includedirs {
 	"include"
@@ -7,3 +7,6 @@ includedirs {
 files {
 	"include/RocLogger/RocLogger.cpp"
 }
+
+
+filter {}
